@@ -1,15 +1,15 @@
 {
-  "name": "@sungik-choi/gatsby-starter-apple",
+  "name": "@meoki/blog",
   "description": "Gatsby blog starter kit with beautiful and simple design",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "deploy": "gatsby build && gh-pages -d public -b master",
+    "build": "gatsby build --prefix-paths",
+    "develop": "gatsby develop --prefix-paths",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
-    "serve": "gatsby serve",
+    "serve": "gatsby serve --prefix-paths",
     "clean": "gatsby clean"
   },
   "dependencies": {
@@ -52,20 +52,20 @@
     "prettier": "2.0.5"
   },
   "author": {
-    "name": "Sungik Choi",
-    "email": "sungik.dev@gmail.com",
-    "url": "https://sungikchoi.com"
+    "name": "Meoki",
+    "email": "meoki@gsu.vn",
+    "url": "https://meokisama.github.io"
   },
   "keywords": [
     "gatsby"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/sungik-choi/gatsby-starter-apple.git"
+    "url": "https://github.com/meokisama/blog"
   },
   "bugs": {
-    "url": "https://github.com/sungik-choi/gatsby-starter-apple/issues",
-    "email": "sungik.dev@gmail.com"
+    "url": "https://github.com/meokisama/blog/issues",
+    "email": "meoki@gsu.vn"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"

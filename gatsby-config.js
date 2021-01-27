@@ -31,6 +31,7 @@ module.exports = {
       `gatsby-plugin-feed`,
     ],
   },
+  pathPrefix: `/blog`,
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
