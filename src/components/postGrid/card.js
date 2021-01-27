@@ -28,6 +28,12 @@ const Wrapper = styled.div`
   height: 100%;
   border-radius: var(--border-radius-base);
   background-color: var(--color-card);
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.16);
+  transition: all 0.3s ease-out;
+  &:hover {
+      transform: translate3d(0px, -0.25rem, 0px);
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.32);
+    }
 
   /* Fix Safari overflow:hidden with border radius not working error */
   transform: translateZ(0);

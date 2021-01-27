@@ -7,7 +7,7 @@ import { DARK } from 'constants/constants';
 
 const ThemeToggleButton = ({ themeToggler }) => {
   const theme = useContext(ThemeContext);
-  const LABEL_TEXT = theme === DARK ? 'Light theme' : 'Dark theme';
+  const LABEL_TEXT = theme === DARK ? 'Light' : 'Dark';
 
   return (
     <Button onClick={themeToggler}>

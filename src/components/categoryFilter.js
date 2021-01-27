@@ -48,6 +48,7 @@ const Nav = styled.nav`
   margin-bottom: 48px;
   padding: 12px var(--sizing-md);
   border-radius: var(--border-radius-base);
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.16);
 
   a#active {
     color: var(--color-white);

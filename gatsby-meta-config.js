@@ -1,12 +1,12 @@
 module.exports = {
-  title: 'Dev Ed', // Your website title
-  description: `Ed's Blog`, // Your website description
-  author: 'Ed', // Maybe your name
-  siteUrl: 'https://gatsby-starter-apple.netlify.app', // Your website URL
+  title: 'Meoki The Blog ®', // Your website title
+  description: `Meoki The Blog`, // Your website description
+  author: 'Meoki', // Maybe your name
+  siteUrl: 'https://meokisama.github.io/blog', // Your website URL
   lang: 'en', // Language
   utterances: 'sungik-choi/gatsby-starter-apple-comment', // Github repository to store comments
   links: {
-    github: 'https://github.com/sungik-choi/gatsby-starter-apple', // Your github repository
+    github: 'https://github.com/meokisama', // Your github repository
   },
   icon: 'src/images/icon.png', //  Favicon Path
 };

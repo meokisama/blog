@@ -12,8 +12,8 @@ const Layout = ({ children }) => {
   const site = useSiteMetadata();
   const { title, author } = site.siteMetadata;
   const copyrightStr = `Copyright © ${author}. Built with `;
-  const repoName = 'gatsby-starter-apple';
-  const repoSrc = 'https://github.com/sungik-choi/gatsby-starter-apple';
+  const repoName = 'Gatsby';
+  const repoSrc = 'https://gatsbyjs.com';
 
   return (
     <ThemeProvider theme={styledTheme}>

@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
     --padding-lg: 22px;
 
     --border-radius-sm: 6px;
-    --border-radius-base: 8px;
+    --border-radius-base: 10px;
     --border-radius-lg: 28px;
 
     --sizing-xs: 4px;
@@ -62,7 +62,7 @@ const GlobalStyle = createGlobalStyle`
       --color-nav-bar: rgba(255, 255, 255, 0.7);
       --color-nav-border: rgba(200, 200, 200, 0.7);
       --color-category-button: #f2f2f2;
-      --color-background: #f2f2f2;
+      --color-background: #f8f8f8;
       --color-post-background: #ffffff;
       --color-card: #ffffff;
       --color-code: #f2f2f2;
