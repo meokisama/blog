@@ -4,7 +4,7 @@ module.exports = {
   author: 'Meoki', // Maybe your name
   siteUrl: 'https://meokisama.github.io/blog', // Your website URL
   lang: 'en', // Language
-  utterances: 'sungik-choi/gatsby-starter-apple-comment', // Github repository to store comments
+  utterances: 'meokisama/blog-comment', // Github repository to store comments
   links: {
     github: 'https://github.com/meokisama', // Your github repository
   },
