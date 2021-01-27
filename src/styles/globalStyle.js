@@ -69,7 +69,7 @@ const GlobalStyle = createGlobalStyle`
       --color-code-block: #fafafa;
       --color-code-highlight: rgba(0, 0, 0, 0.05);
       --color-code-highlight-border: rgba(0, 0, 0, 0.2);
-      --color-gray-1: #f2f2f2;
+      --color-gray-1: #f8f8f8;
       --color-gray-2: #e0e0e0;
       --color-gray-3: #d1d1d1;
       --color-gray-4: #868686;

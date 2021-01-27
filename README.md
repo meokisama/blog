@@ -77,14 +77,12 @@ Open the `my-blog-starter` directory in your code editor of choice and edit `src
 │   ├── layout
 │   ├── pages
 │   │   ├── index.js // Index page
-│   │   ├── about.js // About page
 │   │   └── 404.js // 404 page
 │   └── posts
 │   │   ├── blog
-│   │   │   ├── images // Blog post images
-│   │   │   ├── getting-started.md // Blog post markdown
-│   │   │   └── ...
-│   │   └── about.md // About page markdown
+│   │       ├── images // Blog post images
+│   │       ├── getting-started.md // Blog post markdown
+│   │       └── ...
 │   ├── store
 │   ├── styles // Reusable styled components, animations
 │   ├── templates
