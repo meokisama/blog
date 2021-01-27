@@ -1,16 +1,22 @@
-# Gatsby Starter Apple
+<p align="center">
+  <a href="https://meokisama.github.io">
+    <img src="src/images/favicon.png" />
+  </a>
+</p>
+<h1 align="center">Meoki The Blog</h1>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/1407ade3-7666-4cab-a3e7-08380ce44735/deploy-status)](https://app.netlify.com/sites/gatsby-starter-apple/deploys)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fsungik-choi%2Fgatsby-starter-apple&count_bg=%23FC2350&title_bg=%23555555&icon=gatsby.svg&icon_color=%23E7E7E7&title=HITS&edge_flat=false)](https://hits.seeyoufarm.com)
+<p align="center">
+  <a href="https://github.com/meokisama/meokisama.github.io/blob/develop/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg"/>
+  </a>
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"/>
+  <a href="https://twitter.com/intent/follow?screen_name=meokiiii">
+    <img src="https://img.shields.io/twitter/follow/meokiiii.svg?label=Follow%20@meokiiii"/>
+  </a>
+</p>
 
-**Gatsby blog starter kit with beautiful responsive design**
 
-![Screenshot](.github/screenshot.png)
-
-## 🍎 Demo
-
-👉 **View [Demo Page](https://gatsby-starter-apple.netlify.app/)**
+<p align="center"><b> A beautiful and responsive blog design ! </b></p>
 
 ## ✨ Features
 
@@ -36,7 +42,7 @@ Use the Gatsby CLI to create a new site, specifying the blog starter.
 
 ```shell
 # create a new Gatsby site using the blog starter
-gatsby new my-blog-starter https://github.com/sungik-choi/gatsby-starter-apple
+gatsby new my-blog-starter https://github.com/meokisama/blog
 ```
 
 ### 2. Start developing
@@ -56,24 +62,6 @@ _Note: You'll also see a second link:_`http://localhost:8000/___graphql`_. This 
 
 Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-### 4. Fix meta data
-
-Open **`gatsby-meta-config.js`** and fix meta data of your blog.
-
-```js
-module.exports = {
-  title: 'Dev Ed', // Your website title
-  description: `Ed's Blog`, // Your website description
-  author: 'Ed', // Maybe your name
-  siteUrl: 'https://gatsby-starter-apple.netlify.app', // Your website URL
-  lang: 'en', // Language
-  utterances: 'sungik-choi/gatsby-starter-apple-comment', // Github repository to store comments
-  links: {
-    github: 'https://github.com/sungik-choi/gatsby-starter-apple', // Your github repository
-  },
-  icon: 'src/images/icon.png', //  Favicon Path
-};
-```
 
 ## 🤔 What's Inside
 
@@ -118,3 +106,11 @@ module.exports = {
 ## 💫 Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sungik-choi/gatsby-starter-apple)
+
+## Find me around the web 🌎:
+<a href="https://facebook.com/slytherinnn/"><img align="left" width="150" height="150" src="https://github.com/meokisama/meokisama/blob/master/image/2750554.png"> </a>
+- Information in public on <a href="https://meokisama.github.io/">__Blog__</a> ✍🏾
+- Sharing updates on <a href="https://facebook.com/slytherinnn/">__Facebook__</a> 💼
+- Other products on <a href="https://www.behance.net/meokisama">__Behance__</a> 🏓
+- Daily photos on <a href="https://www.instagram.com/hi.im.meoki/">__Instagram__</a> 📷
+- "Wibu" collection on <a href="https://www.flickr.com/photos/meokisama/albums">__Flickr__</a> 👾
