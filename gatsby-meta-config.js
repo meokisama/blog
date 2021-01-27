@@ -8,5 +8,5 @@ module.exports = {
   links: {
     github: 'https://github.com/meokisama', // Your github repository
   },
-  icon: 'src/images/icon.png', //  Favicon Path
+  icon: 'src/images/favicon.png', //  Favicon Path
 };
