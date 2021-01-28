@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
     --text-sm: 0.75rem;
     --text-base: 1rem;
     --text-md: 1.125rem;
-    --text-title: 1.45rem;
+    --text-title: 2.3rem;
     --text-lg: 1.5rem; 
     --text-xl: 3rem;
 
@@ -132,7 +132,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     background-color: var(--color-post-background);
     -webkit-font-smoothing: antialiased;
 

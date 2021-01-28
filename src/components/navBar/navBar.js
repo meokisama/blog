@@ -13,6 +13,7 @@ import {
 import useSiteMetadata from 'hooks/useSiteMetadata';
 import useMenu from 'hooks/useMenu';
 import '@fontsource/fira-sans-extra-condensed/600.css';
+// import '@fontsource/roboto'
 
 const NavBar = ({ title, themeToggler }) => {
   const site = useSiteMetadata();
@@ -61,6 +62,7 @@ const Nav = styled.nav`
   width: 100%;
   height: var(--nav-height);
   z-index: 10;
+  padding-top:20px;
 
   a:hover {
     text-decoration: none;
@@ -91,11 +93,12 @@ const Content = styled.div`
 
 const Title = styled.h1`
   z-index: 9999;
-  padding: 0;
+  padding: 5px 0 0 0;
   border: none;
   font-size: var(--text-title);
   font-weight: var(--font-weight-semi-bold);
-  color: var(--color-text);
+  font-family: 'Fira Sans Extra Condensed';
+  //color: #525f7f;
 
   a {
     color: inherit;
@@ -109,14 +112,24 @@ const Title = styled.h1`
 const LinkUl = styled.ul`
   display: flex;
   font-family: 'Fira Sans Extra Condensed';
-  letter-spacing: 0.5px;
 
   a {
+    padding: 10px 10px;
+    line-height: 10px;
     font-weight: var(--font-weight-regular);
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    //color: #525f7f;
+    // border: 2px solid ${'#000000'};
+    // transition-property: border-radius;
+    // transition-duration: 0.7s;
   }
 
   a:hover, a:focus {
     color: var(--color-blue);
+    // border-radius: 1.5rem;
+    // background-color: #000;
+    // color: #fff;
   }
 
   li {
@@ -124,6 +137,8 @@ const LinkUl = styled.ul`
     justify-content: center;
     align-items: center;
     margin-left: 32px;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
   }
 
   li:first-child,

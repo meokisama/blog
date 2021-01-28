@@ -8,7 +8,9 @@ import { rhythm } from 'styles/typography';
 import Category from 'styles/category';
 import DateTime from 'styles/dateTime';
 import Markdown from 'styles/markdown';
-import '@fontsource/fira-sans-condensed/300.css'
+import '@fontsource/fira-sans-condensed/300.css';
+import '@fontsource/inter/900.css';
+import {BlogDate} from '../components/postGrid/card';
 
 const BlogPost = ({ data }) => {
   const {
@@ -29,11 +31,11 @@ const BlogPost = ({ data }) => {
             <InnerWrapper>
               <div>
                 <header>
-                  <Info>
-                    <PostCategory>{category}</PostCategory>
-                    <Time dateTime={date}>{date}</Time>
-                  </Info>
                   <Title>{title}</Title>
+                  <Info>
+                    {/* <PostCategory>{category}</PostCategory> */}
+                    <BlogDate date={date} />
+                  </Info>
                   <Desc>{desc}</Desc>
                 </header>
                 <Divider />
@@ -54,7 +56,7 @@ const BlogPost = ({ data }) => {
 };
 
 const OuterWrapper = styled.div`
-  margin-top: var(--sizing-xl);
+  margin-top: 100px;
 
   @media (max-width: ${({ theme }) => theme.device.sm}) {
     margin-top: var(--sizing-lg);
@@ -93,13 +95,13 @@ const Info = styled.div`
 
 const Time = styled(DateTime)`
   display: block;
-  margin-top: var(--sizing-xs);
+  margin-top: var(--sizing-base);
 `;
 
 const Desc = styled.p`
   margin-top: var(--sizing-lg);
   line-height: 1.5;
-  font-size: var(--text-lg);
+  font-size: 1.2rem;
   font-family: 'Fira Sans Condensed', sans-serif;
 
   @media (max-width: ${({ theme }) => theme.device.sm}) {
@@ -120,6 +122,7 @@ const Title = styled.h1`
   font-weight: var(--font-weight-bold);
   line-height: 1.1875;
   font-size: var(--text-xl);
+  font-family: 'Inter';
 
   @media (max-width: ${({ theme }) => theme.device.md}) {
     line-height: 1.21875;
