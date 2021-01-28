@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
     --text-sm: 0.75rem;
     --text-base: 1rem;
     --text-md: 1.125rem;
-    --text-title: 2.3rem;
+    --text-title: 1.75rem;
     --text-lg: 1.5rem; 
     --text-xl: 3rem;
 

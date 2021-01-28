@@ -61,7 +61,7 @@ const Nav = styled.nav`
   width: 100%;
   height: var(--nav-height);
   z-index: 10;
-  padding-top:20px;
+  padding-top:40px;
 
   a:hover {
     text-decoration: none;
@@ -116,7 +116,7 @@ const LinkUl = styled.ul`
     padding: 10px 10px;
     line-height: 10px;
     font-weight: 700px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: 0.5px;
     //color: #525f7f;
     // border: 2px solid ${'#000000'};
