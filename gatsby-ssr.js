@@ -1,6 +1,5 @@
 const React = require('react');
 
-
 exports.onRenderBody = ({ setPreBodyComponents }) => {
   setPreBodyComponents([
     React.createElement('script', {
