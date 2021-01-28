@@ -146,7 +146,7 @@ export const query = graphql`
             }
           }
         }
-        date(formatString: "YYYY-MM-DD")
+        date(formatString: "DD MMMM, YYYY", locale:"vi")
         category
       }
     }

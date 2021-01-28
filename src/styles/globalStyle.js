@@ -62,14 +62,14 @@ const GlobalStyle = createGlobalStyle`
       --color-nav-bar: rgba(255, 255, 255, 0.7);
       --color-nav-border: rgba(200, 200, 200, 0.7);
       --color-category-button: #f2f2f2;
-      --color-background: #f8f8f8;
+      --color-background: #ffffff;
       --color-post-background: #ffffff;
       --color-card: #ffffff;
       --color-code: #f2f2f2;
       --color-code-block: #fafafa;
       --color-code-highlight: rgba(0, 0, 0, 0.05);
       --color-code-highlight-border: rgba(0, 0, 0, 0.2);
-      --color-gray-1: #f8f8f8;
+      --color-gray-1: #ffffff;
       --color-gray-2: #e0e0e0;
       --color-gray-3: #d1d1d1;
       --color-gray-4: #868686;

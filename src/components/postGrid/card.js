@@ -3,8 +3,19 @@ import styled from 'styled-components';
 import CenteredImg from './centeredImg';
 import Category from 'styles/category';
 import DateTime from 'styles/dateTime';
+import {faCalendarAlt} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '@fontsource/fira-sans-condensed/300.css'
+
+export const BlogDate = ({ date }) => (
+  <span style={{ fontSize: 15}}>
+    <span>
+      <FontAwesomeIcon color="gray" icon={faCalendarAlt} />
+      &nbsp;&nbsp;
+      <DateTime dateTime={date}>{date}</DateTime>
+    </span>
+  </span>      
+);
 
 const Card = ({ thumbnail, alt, category, title, desc, date }) => {
   return (
@@ -12,8 +23,7 @@ const Card = ({ thumbnail, alt, category, title, desc, date }) => {
       <CenteredImg src={thumbnail} alt={alt} />
       <Text>
         <div>
-          <FontAwesomeIcon color="gray" icon="calendar-alt" />
-          <DateTime dateTime={date}>{date}</DateTime>
+          <BlogDate date={date} />
           <Title>{title}</Title>
           <Desc>{desc}</Desc>
         </div>
@@ -31,6 +41,7 @@ const Wrapper = styled.div`
   height: 100%;
   border-radius: var(--border-radius-base);
   background-color: var(--color-card);
+  border-bottom: 7px solid ${'#6D83F2'};
   box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.16);
   transition: all 0.3s ease-out;
   &:hover {
