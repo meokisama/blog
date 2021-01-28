@@ -17,8 +17,8 @@ module.exports = {
         name: 'Home',
       },
       {
-        link: meta.links.github,
-        name: 'Github',
+        link: meta.links.portfolio,
+        name: 'Portfolio',
       },
     ],
     plugins: [

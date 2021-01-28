@@ -55,6 +55,7 @@ const Content = styled.div`
   justify-content: center;
   align-items: center;
   background-color: transparent;
+  letter-spacing: 0.5px;
 `;
 
 const Text = styled.span`

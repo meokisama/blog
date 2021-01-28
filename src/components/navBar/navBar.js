@@ -12,6 +12,7 @@ import {
 } from 'styles/navBarAnimation';
 import useSiteMetadata from 'hooks/useSiteMetadata';
 import useMenu from 'hooks/useMenu';
+import '@fontsource/fira-sans-extra-condensed/600.css';
 
 const NavBar = ({ title, themeToggler }) => {
   const site = useSiteMetadata();
@@ -30,10 +31,10 @@ const NavBar = ({ title, themeToggler }) => {
 
   return (
     <Nav ref={navRef} aria-label="Global Navigation">
-      <NavBackground toggle={toggle} />
+      {/* <NavBackground toggle={toggle} /> */}
       <Content>
         <Title onClick={() => setToggle(false)}>
-          <Link to="/">{title}</Link>
+          <Link to="/">meoki.</Link>
         </Title>
         <LinkWrap>
           <Curtain ref={curtainRef} toggle={toggle} />
@@ -55,7 +56,7 @@ const NavBar = ({ title, themeToggler }) => {
 const Nav = styled.nav`
   min-width: var(--min-width);
   position: sticky;
-  top: 0;
+  // top: 0;
   left: 0;
   width: 100%;
   height: var(--nav-height);
@@ -107,6 +108,8 @@ const Title = styled.h1`
 
 const LinkUl = styled.ul`
   display: flex;
+  font-family: 'Fira Sans Extra Condensed';
+  letter-spacing: 0.5px;
 
   a {
     font-weight: var(--font-weight-regular);
