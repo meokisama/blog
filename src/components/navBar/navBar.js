@@ -12,8 +12,7 @@ import {
 } from 'styles/navBarAnimation';
 import useSiteMetadata from 'hooks/useSiteMetadata';
 import useMenu from 'hooks/useMenu';
-import '@fontsource/fira-sans-extra-condensed/600.css';
-// import '@fontsource/roboto'
+import '@fontsource/roboto/900.css'
 
 const NavBar = ({ title, themeToggler }) => {
   const site = useSiteMetadata();
@@ -97,7 +96,7 @@ const Title = styled.h1`
   border: none;
   font-size: var(--text-title);
   font-weight: var(--font-weight-semi-bold);
-  font-family: 'Fira Sans Extra Condensed';
+  font-family: 'Roboto';
   //color: #525f7f;
 
   a {
@@ -111,12 +110,12 @@ const Title = styled.h1`
 
 const LinkUl = styled.ul`
   display: flex;
-  font-family: 'Fira Sans Extra Condensed';
+  font-family: 'Roboto';
 
   a {
     padding: 10px 10px;
     line-height: 10px;
-    font-weight: var(--font-weight-regular);
+    font-weight: 700px;
     font-size: 1.1rem;
     letter-spacing: 0.5px;
     //color: #525f7f;
