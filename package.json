@@ -13,6 +13,10 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@fontsource/fira-sans-condensed": "^4.1.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "babel-plugin-styled-components": "^1.11.1",
     "dark-theme-github": "github:remorses/dark-github-theme",
     "disable-scroll": "^0.5.1",

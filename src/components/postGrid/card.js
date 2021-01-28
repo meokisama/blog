@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import CenteredImg from './centeredImg';
 import Category from 'styles/category';
 import DateTime from 'styles/dateTime';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '@fontsource/fira-sans-condensed/300.css'
 
 const Card = ({ thumbnail, alt, category, title, desc, date }) => {
   return (
@@ -10,11 +12,12 @@ const Card = ({ thumbnail, alt, category, title, desc, date }) => {
       <CenteredImg src={thumbnail} alt={alt} />
       <Text>
         <div>
-          <Category>{category}</Category>
+          <FontAwesomeIcon color="gray" icon="calendar-alt" />
+          <DateTime dateTime={date}>{date}</DateTime>
           <Title>{title}</Title>
           <Desc>{desc}</Desc>
         </div>
-        <DateTime dateTime={date}>{date}</DateTime>
+        <div><Category>{category}</Category></div>
       </Text>
     </Wrapper>
   );
@@ -69,6 +72,7 @@ const Title = styled.h3`
 const Desc = styled.p`
   line-height: 1.5;
   margin-top: 8px;
+  font-family: 'Fira Sans Condensed', sans-serif;
   padding-bottom: var(--sizing-sm);
   color: var(--color-text-2);
   display: -webkit-box;

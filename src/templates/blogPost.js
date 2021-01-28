@@ -8,6 +8,7 @@ import { rhythm } from 'styles/typography';
 import Category from 'styles/category';
 import DateTime from 'styles/dateTime';
 import Markdown from 'styles/markdown';
+import '@fontsource/fira-sans-condensed/300.css'
 
 const BlogPost = ({ data }) => {
   const {
@@ -99,6 +100,7 @@ const Desc = styled.p`
   margin-top: var(--sizing-lg);
   line-height: 1.5;
   font-size: var(--text-lg);
+  font-family: 'Fira Sans Condensed', sans-serif;
 
   @media (max-width: ${({ theme }) => theme.device.sm}) {
     line-height: 1.31579;

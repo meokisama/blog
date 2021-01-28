@@ -108,7 +108,7 @@ const CategoryButton = styled(Link)`
 `;
 
 const Divider = styled.div`
-  width: 1px;
+  width: 2px;
   height: 32px;
   margin: 0 var(--sizing-sm);
   transform: translateX(-50%);
@@ -118,7 +118,7 @@ const Divider = styled.div`
 const CategoryUl = styled.ul`
   display: flex;
   list-style: none;
-  overflow-x: scroll;
+  // overflow-x: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
 
