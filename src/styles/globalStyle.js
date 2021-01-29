@@ -179,6 +179,46 @@ const GlobalStyle = createGlobalStyle`
     clip: rect(1px, 1px, 1px, 1px);
     white-space: no-wrap;
   }
+
+  @font-face{
+    font-family: 'JetBrainsMono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  code, 
+  code span,
+  code span .mtk4 {
+    font-family: "JetBrainsMono"!important;
+  }
+  
+  .lang-tabbed_container {
+    position: relative;
+  }
+  
+  .lang-tabbed-item {
+    font-size: 0.9rem;
+    height: 49px;
+    width: fit-content;
+    padding: 7px 9px;
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background: #1E1E1E;
+    position: absolute;
+    font-family: "JetBrainsMono";
+    font-weight: 700;
+    top: -33px;
+    right: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    
+  } 
+
 `;
 
 export default GlobalStyle;

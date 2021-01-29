@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import Layout from 'layout/layout';
@@ -22,6 +22,22 @@ const BlogPost = ({ data }) => {
 
   const ogImagePath = thumbnail && thumbnail.childImageSharp.fixed.src;
 
+  useEffect(() => {
+    let blogContent = document.querySelector('.blog-post-content');
+    blogContent.querySelectorAll('pre.grvsc-container').forEach(item => {
+      let html = item.outerHTML;
+  
+      item.outerHTML = `
+          <div class= 'lang-tabbed_container'>
+            <div class='lang-tabbed-item'>
+              ${item.dataset.language.toUpperCase()}
+            </div>
+            ${html}
+          </div>
+        `;
+    });
+  }, []);
+
   return (
     <Layout>
       <SEO title={title} description={desc} image={ogImagePath} />
@@ -40,6 +56,7 @@ const BlogPost = ({ data }) => {
                 </header>
                 <Divider />
                 <Markdown
+                  className="blog-post-content"
                   dangerouslySetInnerHTML={{ __html: html }}
                   rhythm={rhythm}
                 />

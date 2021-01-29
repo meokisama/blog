@@ -34,20 +34,19 @@ Vì vậy, mình xin giới thiệu một bộ gõ mới hơn, xịn hơn, chứ
 ### Mã nguồn
  Đầu tiên muốn build được thì phải có mã nguồn cái đã, các bạn clone source của Bamboo về bằng cách nhập lệnh sau vào Terminal :
 
-```
+```bash
 git clone https://github.com/BambooEngine/ibus-bamboo.git
 ```
 **hoặc** tài từ file nén rồi giải nén như sau :
-```
+```bash {numberLines}
 wget https://github.com/BambooEngine/ibus-bamboo/archive/master.zip -O ibus-bamboo.zip
-
 unzip ibus-bamboo.zip
 ```
 Xong bước đầu.
 ### Các gói bắt buộc
 Để có thể build được, cần cài đặt các package gồm **make** để chạy Makefile, **golang** để build, **libx11-dev** và **libxtst-dev** cho chức năng *"Loại trừ ứng dụng"* của Bamboo.
 Các bạn cài đặt theo hướng dẫn sau :
-```
+```bash {numberLines}
 # Với Debian/Ubuntu:
 sudo apt install make golang libx11-dev libxtst-dev
 
@@ -59,13 +58,12 @@ sudo zypper install make go libX11-devel libXtst-devel
 ```
 ### Build
 Sau khi cài đặt xong cac gói thì phần build rất đơn giản như sau:
-```
+```bash {numberLines}
 cd ibus-bamboo
-
 sudo make install
 ```
 Cuối cùng là restart lại IBus:
-```
+```bash
 ibus restart
 ```
 \
@@ -75,7 +73,7 @@ ibus restart
 Để thêm **ibus-bamboo** vào danh sách bộ gõ của Linux, đầu tiên ta cần thêm source trong bảng cấu hình **IBus Preferences**.
 
 Để mở **IBus Preferences**, nhập lệnh sau vào Terminal:
-```
+```bash
 ibus-setup
 ```
 Sau đó chọn tab **Input Method** → click vào **Add** → search **Vietnamese** → chọn **Bamboo** đỏ chói như hình.
@@ -102,7 +100,7 @@ Cuối cùng, các bạn **Log out** rồi **Log in** lại và gõ thử và đ
 Nếu không tính các lỗi bất khả kháng như không tương thích hệ điều hành (hiếm) thì hầu như các lỗi **không gõ được tiếng Việt sau khi cài** ```ibus-bamboo``` thường là do thiếu một số package khác, thường gặp nhất là thiếu package ```ibus-gtk3```.
 
 Thiếu thì cài thêm thôi, các bạn chạy lệnh sau trong Terminal :
-```
+```bash
 sudo apt install ibus-gtk3
 ```
 Rồi **Log out** và **Log in** lại xe đã được chưa nha.
@@ -119,12 +117,12 @@ Bạn đã cài đặt `ibus-bamboo` nhưng có vẻ như không gõ tiếng Vi�
 ### Kiểm tra biến môi trường
 Hiểu một cách nôm na, trong linux có những biến môi trường mà sẽ quyết định các phần mềm sẽ hoạt động như thế nào. Một số biến môi trường sẽ quyến định rằng input method server nào sẽ được dùng. Để kiểm tra những biến môi trường đó các bạn chạy.
 
-```sh
+```bash
 env | grep "IM_MODULE\|XMODIFIERS"
 ```
 
 Kết quả trả về sẽ có **dạng** kiểu như:
-```sh
+```bash
 GTK_IM_MODULE=ibus
 QT_IM_MODULE=xim
 XMODIFIERS=@im=xim
@@ -134,7 +132,7 @@ CLUTTER_IM_MODULE=xim
 
 Việc cài đặt biến môi trường là để đảm bảo các phần mềm khác sẽ sử dụng ibus. Để cài đặt các bạn thêm những dòng sau vào trong file `~/.bashrc` và `~/.xprofile`
 
-```sh
+```bash {numberLines}
 export GTK_IM_MODULE=ibus
 export QT_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
@@ -145,7 +143,7 @@ export CLUTTER_IM_MODULE=ibus
 export GLFW_IM_MODULE=ibus
 ```
 hoặc chạy lệnh sau
-```
+```bash
 im-config -n ibus
 ```
 
@@ -155,7 +153,7 @@ Sau khi thực hiện thay đổi, bạn cần thoát đăng nhập và vào l�
 
 
 **Lưu ý:** 
-- Nếu bạn dùng shell khác như `zsh` thì thay vì `.bashrc`, hãy thêm vào `.zshrc`. Tương tự với `fish` hay những shell khác.
+- Nếu bạn dùng bash khác như `zsh` thì thay vì `.bashrc`, hãy thêm vào `.zshrc`. Tương tự với `fish` hay những bash khác.
 - Nếu setup như trên không được, bạn có thể thử chạy `ibus-daemon -rdx` (chạy ibus xim server).
 - File `.profile` được thực thi khi bạn login vào hệ thống, còn file `.bashrc` được thực thi mỗi khi bạn mở terminal và chỉ có hiệu lực trong terminal đó.
 
@@ -163,22 +161,22 @@ Sau khi thực hiện thay đổi, bạn cần thoát đăng nhập và vào l�
 
 Nếu bạn vẫn chưa thể gõ trên một số ứng dụng, hãy thực hiện các bước dưới đây.
 
-1. Đặt biến `XMODIFERS` như sau (nếu bạn mở 1 terminal mới hay chạy 1 shell mới sau khi chạy bước này thì phải chạy lại nhé)
-```shell
+1. Đặt biến `XMODIFERS` như sau (nếu bạn mở 1 terminal mới hay chạy 1 bash mới sau khi chạy bước này thì phải chạy lại nhé)
+```bash
 export XMODIFERS=@im=ibus
 ```
 2. Chạy lại `ibus-daemon` với tùy chọn sau:
-```sh
+```bash
 ibus-daemon -rdx
 ```
 3. Thay đổi thử các biến khác thành `ibus` hoặc `xim` xem ibus có hoạt động trên chương trình mà bạn dùng hay không, nhưng phải giữ nguyên biến `XMODIFERS`. Ví dụ, mình gặp vấn đề không gõ được trên `chromium` với `teams`. Do cả 2 ứng dụng trên dùng `chromium` và dùng GTK, mình sẽ thử trên terminal như sau:
-```shell
+```bash
 GTK_IM_MODULE=ibus chromium # không gõ được tiếng việt với cửa sổ chromium mới hiện lên
 # Nhấn Ctrl + C trên terminal để ngắt
 GTK_IM_MODULE=xim # gõ được tiếng Việt
 ```
 4. Sau khi thấy rằng việc thay đổi có hiệu lực, bạn thực hiện ghi lại các config vào trong file.
-```sh
+```bash
 export GTK_IM_MODULE=xim # đổi thành xim
 export QT_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus

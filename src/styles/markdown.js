@@ -140,7 +140,9 @@ const Markdown = styled.article`
   }
 
   pre {
-    border: 1px solid var(--color-gray-3);
+    //border: 1px solid var(--color-gray-3);
+    border-radius: 15px !important;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.16);
   }
 
   pre.grvsc-container {
