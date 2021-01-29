@@ -6,7 +6,7 @@ const scrollBar = css`
   }
 
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 7px;
     height: 7px;
     background-color: white;
     cursor: pointer;
@@ -22,7 +22,7 @@ const scrollBar = css`
   }
 
   ::-moz-scrollbar {
-    width: 10px;
+    width: 7px;
     height: 7px;
     background-color: white;
     cursor: pointer;

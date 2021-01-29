@@ -21,7 +21,7 @@ Tương tự với người anh em trên Windows là **Unikey**, bên Linux cũn
 
 Vì vậy, mình xin giới thiệu một bộ gõ mới hơn, xịn hơn, chức năng đầy đủ hơn, đó là **IBus Bamboo** (<a href="https://github.com/BambooEngine/ibus-bamboo">Github</a>).
 
-![](images/go-tieng-viet-kali-linux/demo.gif)
+![](https://raw.githubusercontent.com/meokisama/blog/develop/src/posts/images/go-tieng-viet-kali-linux/demo.gif)
 
 ## Lưu ý
 
@@ -78,15 +78,15 @@ ibus-setup
 ```
 Sau đó chọn tab **Input Method** → click vào **Add** → search **Vietnamese** → chọn **Bamboo** đỏ chói như hình.
 
-![](images/go-tieng-viet-kali-linux/setup.png)
+![](https://raw.githubusercontent.com/meokisama/blog/develop/src/posts/images/go-tieng-viet-kali-linux/setup.png)
 
 Tiếp theo, mở phần cài đặt **Settings** lên
 
-![](images/go-tieng-viet-kali-linux/opensetting.png)
+![](https://raw.githubusercontent.com/meokisama/blog/develop/src/posts/images/go-tieng-viet-kali-linux/opensetting.png)
 
 Chuyển đến tab **Region & Language** → click dấu **+** bên dưới phần **Input Source** → timf kiếm **Vietnamese** → chọn **Vietnamese (Bamboo)** như hình.
-
-![](images/go-tieng-viet-kali-linux/setting.png)
+ 
+![](https://raw.githubusercontent.com/meokisama/blog/develop/src/posts/images/go-tieng-viet-kali-linux/setting.png)
 
 OK xong rồi.
 
