@@ -211,7 +211,7 @@ const GlobalStyle = createGlobalStyle`
     color: white;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    background: #1E1E1E;
+    background: #242424;
     position: absolute;
     font-family: "JetBrainsMono";
     font-weight: 700;

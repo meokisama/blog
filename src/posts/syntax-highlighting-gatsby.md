@@ -1,10 +1,10 @@
 ---
-title: "Code Highlight"
-category: "Code"
-date: "2020-02-01 12:00:00 +09:00"
+title: "Syntax highlighting trong GatsbyJS"
+category: "code"
+date: "2020-08-10 12:00:00 +09:00"
 desc: "Test Markdown Code Highlight"
-thumbnail: "./images/code-block/thumbnail.jpg"
-alt: "code block graphic"
+thumbnail: "./images/syntax-highlighting-gatsby/thumb.png"
+alt: "syntax highlighting gatsbyJS"
 ---
 
 ## Using Plugin
