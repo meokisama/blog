@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import scrollBar from '../styles/scrollbar.style';
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -178,6 +179,10 @@ const GlobalStyle = createGlobalStyle`
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
     white-space: no-wrap;
+  }
+
+  @media all and (min-width: 450px) {
+    ${scrollBar};
   }
 
   @font-face{
