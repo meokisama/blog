@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
   const [theme, themeToggler] = useTheme();
   const site = useSiteMetadata();
   const { title, author } = site.siteMetadata;
-  const copyrightStr = `Copyright © ${author}. Built with `;
+  const copyrightStr = `Copyright © ${author}.`;
   const repoName = 'Gatsby';
   const repoSrc = 'https://gatsbyjs.com';
 
@@ -26,9 +26,9 @@ const Layout = ({ children }) => {
         <Footer role="contentinfo">
           <Copyright aria-label="Copyright">
             {copyrightStr}
-            <RepoLink href={repoSrc} target="__blank">
+            {/* <RepoLink href={repoSrc} target="__blank">
               {repoName}
-            </RepoLink>
+            </RepoLink> */}
           </Copyright>
         </Footer>
       </ThemeContext.Provider>

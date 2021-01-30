@@ -108,7 +108,7 @@ const CategoryButton = styled(Link)`
 `;
 
 const Divider = styled.div`
-  width: 2px;
+  width: 1px;
   height: 32px;
   margin: 0 var(--sizing-sm);
   transform: translateX(-50%);
