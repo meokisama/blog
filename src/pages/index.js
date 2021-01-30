@@ -6,6 +6,7 @@ import SEO from 'components/seo';
 import PostGrid from 'components/postGrid/postGrid';
 import CategoryFilter from 'components/categoryFilter';
 import useSiteMetadata from 'hooks/useSiteMetadata';
+import Hero from '../components/hero';
 
 const Home = ({ pageContext, data }) => {
   const [posts, setPosts] = useState([]);
@@ -57,6 +58,7 @@ const Home = ({ pageContext, data }) => {
       <SEO title="Home" />
       <Main>
         <Content>
+        <Hero />
           &nbsp;
           <CategoryFilter categoryList={data.allMarkdownRemark.group} />
           <PostTitle>{postTitle}</PostTitle>
