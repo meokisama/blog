@@ -90,6 +90,7 @@ const Content = styled.div`
 `;
 
 const PostTitle = styled.h2`
+  margin-top: 6rem;
   font-size: 2rem;
   font-weight: var(--font-weight-extra-bold);
   margin-bottom: var(--sizing-md);

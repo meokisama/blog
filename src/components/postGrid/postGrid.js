@@ -40,6 +40,7 @@ const PostGrid = ({ posts }) => {
 };
 
 const Grid = styled.ul`
+  margin-top: 3rem;
   display: grid;
   grid-gap: var(--grid-gap-xl);
   grid-template-columns: repeat(2, 1fr);
