@@ -1,7 +1,7 @@
 ---
 title: "Gõ tiếng Việt trên Kali Linux 2020.4"
 category: "linux"
-date: "2021-01-28 12:00:00 +09:00"
+date: "2020-12-28 12:00:00 +09:00"
 desc: "Hướng dẫn chi tiết cách cài đặt và cấu hình bộ gõ tiếng Việt Ibus Bamboo trên Kali Linux 2020.4."
 thumbnail: "./images/go-tieng-viet-kali-linux/kali.png"
 alt: "Kali Linux"
