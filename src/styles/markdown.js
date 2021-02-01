@@ -132,6 +132,7 @@ const Markdown = styled.article`
   img {
     display: block;
     margin-right: auto;
+    margin-left: auto;
   }
 
   pre,

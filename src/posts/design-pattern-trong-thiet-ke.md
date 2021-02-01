@@ -3,7 +3,7 @@ title: "'Design Pattern' trong Thiết kế"
 category: "graphic-design"
 date: "2020-11-29 12:00:00 +09:00"
 desc: "Một số quy chuẩn, kinh nghiệm và tài nguyên đồng hành cùng tớ trong bộ môn Graphic Design."
-thumbnail: "./https://raw.githubusercontent.com/meokisama/blog/develop/src/posts/images/design-pattern-trong-thiet-ke/thumb.png"
+thumbnail: "./images/design-pattern-trong-thiet-ke/thumb.png"
 alt: "design pattern in graphic design"
 ---
 
