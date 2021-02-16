@@ -137,3 +137,8 @@ Và trông nó như này đây :
 Quá đỉnh 😄
 
 **Về source code,** các bạn có thể tham khảo [**ở đây.**](https://github.com/meokisama/butterflyeffect)
+
+## References
+
+- Tham khảo định nghĩa **Wikipedia**
+- Dựa trên bài viết **Chris Greening**
