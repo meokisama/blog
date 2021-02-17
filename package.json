@@ -20,6 +20,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
     "@fortawesome/free-solid-svg-icons": "^5.15.2",
     "@fortawesome/react-fontawesome": "^0.1.14",
+    "@pauliescanlon/gatsby-remark-sticky-table": "^0.0.11",
     "babel-plugin-styled-components": "^1.11.1",
     "dark-theme-github": "github:remorses/dark-github-theme",
     "disable-scroll": "^0.5.1",

@@ -163,6 +163,35 @@ const Markdown = styled.article`
     font-size: 85%;
     border-radius: 3px;
   }
+
+  .remark-sticky-table {
+    border-radius: 2px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    height: 300px;
+    margin: 48px 0px;
+  }
+  
+  .remark-sticky-table-table {
+    border-collapse: collapse;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .remark-sticky-table-th {
+    background-color: #f7f7f7;
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  .remark-sticky-table-tbody:nth-child(odd) {
+    background-color: #fafafa;
+  }
+  
+  .remark-sticky-table-th,
+  .remark-sticky-table-td {
+    padding: 16px;
+  }
+
 `;
 
 export default Markdown;
