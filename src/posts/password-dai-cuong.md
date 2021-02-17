@@ -43,6 +43,25 @@ Việc chọn một mật khẩu khó đoán không ngăn được các công c�
 
 Trong danh sách những mật khẩu phổ biến nhất theo **SplashData**, ta có thể kể đến như `123456`,`123456789`,`qwerty`,`password`,`12345678`,`iloveyou`,`admin`,... . Nếu cũng đang sử dụng mấy thứ mật khẩu vớ vẩn như trên kia, thì rất có thể bạn sẽ **trở thành nạn nhân** của các vụ xâm phạm dữ liệu, vì hầu như tất cả các bộ công cụ bẻ khóa mật khẩu hiện nay đều **có sẵn** những cụm từ phổ biến này. Nếu muốn, bạn có thể truy cập trang [**haveibeenpwned.com**](https://haveibeenpwned.com/) để kiểm tra xem tài khoản của mình đã từng bị xâm phạm bao giờ chưa *(tương đối)*.
 
-| Head one | Head two | Head three |
-| -------- | ---------| ---------- |
-| cell one | cell two | cell three |
+| Position | Password    | Number of users | Time to crack | Time exposed |
+|:--------:|:-----------:|:---------------:|:-------------:|:------------:|
+| 1        | `123456`    | 2,543,285       | < a second    | 23,597,311   |
+| 2        | `123456789` | 961,435         | < a second    | 7,870,694    |
+| 3        | `picture1`  | 371,612         | 3 hours       | 11,190       |
+| 4        |             |                 |               |              |
+| 5        |             |                 |               |              |
+| 6        |             |                 |               |              |
+| 7        |             |                 |               |              |
+| 8        |             |                 |               |              |
+| 9        |             |                 |               |              |
+| 10       |             |                 |               |              |
+| 11       |             |                 |               |              |
+| 12       |             |                 |               |              |
+| 13       |             |                 |               |              |
+| 14       |             |                 |               |              |
+| 15       |             |                 |               |              |
+| 16       |             |                 |               |              |
+| 17       |             |                 |               |              |
+| 18       |             |                 |               |              |
+| 19       |             |                 |               |              |
+| 20       |             |                 |               |              |
