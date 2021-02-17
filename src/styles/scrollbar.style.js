@@ -14,7 +14,7 @@ const scrollBar = css`
 
   ::-webkit-scrollbar-thumb {
     background-color: #93A0E4;
-    border-radius: 5px 0 0 5px;
+    border-radius: 5px 5px 5px 5px;
   }
 
   ::-moz-scrollbartrack-vertical {
