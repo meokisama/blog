@@ -92,12 +92,26 @@ Một nguyên tắc quan trọng khác là **không bao giờ sử dụng cùng 
 
 ### Vậy đã an toàn chưa?
 
-Ngay cả khi bạn đã có một mật khẩu mạnh, hacker vẫn có thể sử dụng công nghệ để đánh bại bạn. Có những chương trình đoán mật khẩu ví dụ  như [**John the Ripper**](https://github.com/openwall/john), một chương trình mã nguồn mở miễn phí mà bất kỳ ai cũng có thể sử dụng và hoạt động trong các tham số cấu hình do người dùng thiết lập. *(Nhân tiện,* ***Hashcat*** *phân tán quá trình tấn công qua nhiều GPU và mạnh hơn nhiều so với* ***John the Ripper*** *).*
+Ngay cả khi bạn đã có một mật khẩu mạnh, hacker vẫn có thể sử dụng công nghệ để đánh bại bạn. Có những chương trình đoán mật khẩu ví dụ  như [**John the Ripper**](https://github.com/openwall/john), một chương trình mã nguồn mở miễn phí mà bất kỳ ai cũng có thể sử dụng và hoạt động trong các tham số cấu hình do người dùng thiết lập.
 
-![](images/password-dai-cuong/john.jpg)
+![](https://raw.githubusercontent.com/meokisama/blog/develop/src/posts/images/password-dai-cuong/john.jpg)
 
 Ví dụ, người dùng có thể chỉ định số lượng kí tự cần thử, có sử dụng các kí tự đặc biệt hay không,... **John the Ripper** và các phần mềm tấn công mật khẩu khác có thể hoán vị các kí tự trong mật khẩu bằng cách sử dụng các bộ quy tắc khác nhau, ví dụ **bộ quy tắc leetspeak** - một hệ thông dùng số để thay thế chữ cái, như `v137 n4m v0 d1ch` thay cho `viet nam vo dich`. 
 
 **Thấy quen hông?** Đúng rồi, teencode ở Việt Nam đấy :))
 
 Cũng vì như vậy nên nếu số lượng kí tự càng nhiều thì để bẻ khóa được bằng kĩ thuật này sẽ càng khó khăn và tốn nhiều thời gian và công sức. Đó là lí do tớ kêu nên đặt một mật khẩu ngẫu nhiên và 25 kí tự trở lên. Khi gặp phải một mật khẩu như vậy, hacker sẽ không có đủ thời gian lẫn nguồn lực để ngồi phá giải.
+
+### Bộ xương phía sau mật khẩu
+
+Khi bạn gõ một mật khẩu, dù là để mở khóa máy tính hay là đăng nhập một dịch vụ trực tuyến, mật khẩu đó sẽ được đưa qua một thuật toán một chiều gọi là **hàm băm** *(hashing function)*. Nó khác với quá trình mã hóa. Mã hóa là 2 chiều : bạn có thể mã hóa và giải mã, với điều kiện bạn có chìa khóa trong tay. Hàm băm là một dạng dấu vân tay đại diện cho một chuỗi cụ thể. Về lý thuyết, các thuật toán một chiều là **bất khả đảo,** hoặc ít nhất là không dễ dàng.
+
+Và nội dung được lưu trữ trong cơ sở dữ liệu mật khẩu trên máy tính hay tài khoản đám mây của bạn không phải là `mypasswordhehe123`, mà là giá trị băm của nó, tức là một chuỗi các số và chữ cái khác hoàn toàn, đóng vai trò là dấu hiệu đại diện cho mật khẩu của bạn.
+
+Tất nhiên, các giá trị băm đó **vẫn có thể bị hacker đánh cắp** thông qua một cuộc tấn công hoặc bị rò rỉ trong các vụ xâm phạm dữ liệu. Sau khi lấy được các giá trị băm mật khẩu này, hacker có thể sử dụng nhiều công cụ có sẵn công khai, như **John the Ripper** hay **Hashcat**, để phá vỡ chúng nhằm tìm ra mật khẩu thực thông qua kĩ thuật vét cạn *(brute force)* hoặc thử từng từ trong các từ điển mật khẩu có sẵn.
+
+:::note
+Nhân tiện, **Hashcat** phân tán quá trình tấn công qua nhiều GPU và mạnh hơn nhiều so với **John the Ripper**.
+:::
+
+Các tùy chonj 

@@ -56,6 +56,7 @@ module.exports = {
           `gatsby-remark-embedder`,
           `gatsby-remark-copy-linked-files`,
           `@pauliescanlon/gatsby-remark-sticky-table`,
+          `gatsby-remark-admonitions`,
           {
             resolve: `gatsby-remark-vscode`,
             options: {

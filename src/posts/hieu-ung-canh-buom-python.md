@@ -124,7 +124,9 @@ Thời tiết bị ảnh hưởng bởi vô số các **đại lượng biến t
 
 Mở rộng hơn là các sự kiện lịch sử. Có thể những sự kiện vô cùng nhỏ đã xảy ra hàng thế kỷ trước có thể có tác động đáng kể đến thời đại chúng ta đang sống hiện nay. Thứ này dẫn đến thứ kia, thứ kia dẫn đến thứ khác nữa, vv... như domino vậy. Và đột nhiên, một lần bạn vấp phải ngón chân của mình có thể dẫn đến mất điện ở Trung Quốc trong 20 năm cũng không chừng hê hê.
 
-**Bài học rút ra:** Nếu một ngày bạn cảm thấy nếu mình là đứa đen đủi thứ 2 thì không thằng nào dám nhận thứ nhất. Đừng lo, biết đâu những gì bạn làm hôm nay sẽ ảnh hưởng đến cuộc sống của bạn trong tương lai đấy 😄
+:::important Bài học rút ra
+Nếu một ngày bạn cảm thấy nếu mình là đứa đen đủi thứ 2 thì không thằng nào dám nhận thứ nhất. Đừng lo, biết đâu những gì bạn làm hôm nay sẽ ảnh hưởng đến cuộc sống của bạn trong tương lai đấy 😄
+:::
 
 ## Cuối cùng
 

@@ -218,11 +218,11 @@ Rồi xong vậy là đủ (vừa đủ).
 
 Hầu như bạn có thể tìm kiếm mọi thứ ở đây, và trang web cho phép tải về một lượng lớn các tài nguyên đồ họa miễn phí, phần lớn ở dưới dạng vector.
 
-***Tại sao lại là vector?***
-
+:::important Tại sao lại là vector?
 Như nãy mình nói thì vector sẽ giữ được chất lượng dù làm gì đi nữa. Mà khi đăng tải một sản phẩm, ta đâu có biết khách hàng muốn làm gì với sản phẩm đó, vì vậy vector sẽ là một dạng phù hợp nhất cho mục đích đăng tải và chia sẻ cho người khác. Người khác download về rồi muốn làm gì thì tùy.
 
 Cũng như khi các nhà sản xuất smart phone bán ốp lưng điện thoại vậy, ta đâu có biết khách hàng muốn ốp màu như nào hay có hoa văn gì đâu. Nên lựa chọn tối ưu là bán một cái ốp trong suốt, xong.
+:::
 
 ### Font
 
