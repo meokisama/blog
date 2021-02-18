@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import "@fontsource/noto-sans/700.css";
 
 const Markdown = styled.article`
   h1,
@@ -71,10 +72,13 @@ const Markdown = styled.article`
   }
 
   h4,
-  h5,
   h6 {
     margin-bottom: ${({ rhythm }) => rhythm(0.5)};
     margin-top: ${({ rhythm }) => rhythm(1)};
+  }
+
+  h5 {
+    font-family:'Noto Sans';
   }
 
   ul,
