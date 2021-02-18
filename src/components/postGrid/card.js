@@ -5,7 +5,8 @@ import Category from 'styles/category';
 import DateTime from 'styles/dateTime';
 import {faCalendarAlt} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import '@fontsource/fira-sans-condensed/300.css'
+import '@fontsource/fira-sans-condensed/300.css';
+import '@fontsource/roboto/900.css';
 
 export const BlogDate = ({ date }) => (
   <span style={{ fontSize: 15}}>
@@ -66,6 +67,7 @@ const Text = styled.div`
 `;
 
 const Title = styled.h3`
+  font-family: 'Roboto';
   margin-top: var(--sizing-xs);
   font-size: var(--text-lg);
   font-weight: var(--font-weight-bold);

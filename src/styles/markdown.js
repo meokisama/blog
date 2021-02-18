@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import "@fontsource/noto-sans/700.css";
+import '@fontsource/roboto/900.css';
 
 const Markdown = styled.article`
   h1,
@@ -50,6 +51,7 @@ const Markdown = styled.article`
   }
 
   h2 {
+    font-family: 'Roboto';
     font-size: 1.75rem;
     line-height: 1.3;
     margin-bottom: ${({ rhythm }) => rhythm(1)};
@@ -61,6 +63,7 @@ const Markdown = styled.article`
   }
 
   h3 {
+    font-family: 'Roboto';
     font-size: 1.31951rem;
     line-height: 1.3;
     margin-bottom: ${({ rhythm }) => rhythm(1)};

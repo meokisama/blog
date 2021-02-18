@@ -1,6 +1,6 @@
 ---
 title: "'Design Pattern' trong Thiết kế"
-category: "graphic-design"
+category: "design"
 date: "2020-11-29 12:00:00 +09:00"
 desc: "Một số quy chuẩn, kinh nghiệm và tài nguyên đồng hành cùng tớ trong bộ môn Graphic Design."
 thumbnail: "./images/design-pattern-trong-thiet-ke/thumb.png"
