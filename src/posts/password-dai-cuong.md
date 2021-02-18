@@ -11,9 +11,9 @@ alt: "all about password"
 
 Không phải bàn cãi, **Mật khẩu** *(Password)* có lẽ là thứ căn bản nhất, phổ biến nhất mà hầu như ai ai cũng phải sử dụng khi bước chân vào Internet.
 
-Đại bộ phận người sử dụng mật khẩu chỉ xem nó là một **dãy kí tự đơn thuần** không hơn không kém để tránh người khác truy cập trái phép vào tài khoản cá nhân của mình. Nhưng mấy ai hiểu được, phía sau *"dãy kí tự đơn thuần"* đó là cả một **trò chơi bảo mật** vô cùng phức tạp và chông gai.
+Đại bộ phận người sử dụng mật khẩu chỉ xem nó là một **dãy kí tự đơn thuần** không hơn không kém để tránh người khác truy cập trái phép vào tài khoản cá nhân của mình. Nhưng mấy ai hiểu được, phía sau *"dãy kí tự đơn thuần"* đó là cả một trò chơi bảo mật vô cùng phức tạp và chông gai.
 
-Chúng ta sử dụng mật khẩu để bảo vệ chính mình, nhưng không phải ai cũng biết cách đặt một mật khẩu **đủ mạnh** hay là những **lưu ý cần thiết** khi sử dụng mật khẩu. Trong bài viết này, tớ sẽ trình bày tất tần tật những mặt tốt xấu lợi hại của mật khẩu.
+Chúng ta sử dụng mật khẩu để bảo vệ chính mình, nhưng không phải ai cũng biết cách đặt một mật khẩu **đủ mạnh** hay là những lưu ý cần thiết khi sử dụng mật khẩu. Trong bài viết này, tớ sẽ trình bày tất tần tật những mặt tốt xấu lợi hại của mật khẩu.
 
 Những kiến thức này không phải ai cũng biết và để ý *(nếu không muốn nói là hầu như không)*, và những thứ này cũng **không phải muốn là đọc được đâu,** hầu như rất ít những trang web nào chia sẻ những vấn đề này *(tớ kiếm thử rồi nhưng không hề có)*. Nên các bạn có đọc được bài này thì cũng chịu khó đọc hết nha, chỉ có tốt chứ không mất gì đâu hê hê.
 
@@ -39,7 +39,7 @@ Tuy nhiên, nhiều người lại **không coi trọng** vấn đề này, kể
 
 Việc chọn một mật khẩu khó đoán không ngăn được các công cụ tấn công như [**Hashcat**](https://github.com/hashcat/hashcat) *(một công cụ hỗ trợ năm phương thức tấn công độc đáo cho hơn 300 thuật toán hashing đã được tối ưu hóa, có hỗ trợ cả CPU lẫn GPU)*, nhưng nó sẽ làm cho quá trình này diễn ra chậm lại, đủ để hacker nản lòng mà chuyển sang mục tiêu khác dễ ăn hơn.
 
-![](images/password-dai-cuong/hashcat.png)
+![](https://raw.githubusercontent.com/meokisama/blog/develop/src/posts/images/password-dai-cuong/hashcat.png)
 
 <br>
 
@@ -70,23 +70,34 @@ Trong danh sách [những mật khẩu phổ biến nhất năm 2020](https://no
 
 <br>
 
-Ngày nay, chúng ta có thể **làm tốt hơn** vậy, thực ra là tốt hơn **rất nhiều**. Có nhiều cách sắp xếp ký tự chữ và số *dài hơn, phức tạp hơn nhiều*. Đừng nghĩ nó khó khăn, tớ sẽ hướng dẫn cho các bạn cả cách tự động và thủ công để thực hiện những công việc đó.
+Ngày nay, chúng ta có thể làm tốt hơn vậy, thực ra là tốt hơn **rất nhiều**. Có nhiều cách sắp xếp ký tự chữ và số *dài hơn, phức tạp hơn nhiều*. Đừng nghĩ nó khó khăn, tớ sẽ hướng dẫn cho các bạn cả cách tự động và thủ công để thực hiện những công việc đó.
 
-### Mật khẩu tối thượng
+### Mật khẩu an toàn
 
 Hãy xem xét *(khuyến khích)* sử dụng một số kĩ thuật sau đây khi tạo mật khẩu, nó sẽ giúp bạn có thể giữ an toàn tốt nhất cho tài khoản của mình.
 
 Đầu tiên, thay vì **mật khẩu thông thường** *(password)*, hãy sử dụng các **cụm mật khẩu** *(passphrase)*, thường có độ dài 20-25 kí tự hoặc hơn. Lí tưởng nhất, hãy sử dụng các kí tự ngẫu nhiên, ví dụ `bhjb5#fdw9738@kj3_4m92&kd9`. Nhưng thật không may, con người phần lớn khó có thể học thuộc được những chuỗi ngẫu nhiên như vậy. Vì vậy, hãy sử dụng các phần mềm quản lý mật khẩu. Những phần mềm này sẽ lưu trữ mật khẩu trong kho chứa **có khóa** và cho phép bạn truy cập bằng một cú nhấp chuột khi cần, đồng thời nó còn có thể tự động hóa quá trình tạo mật khẩu ở trên kia, chỉ với vài click chuột bạn sẽ có một mật khẩu **rất mạnh và độc đáo.**
 
-Tớ xin đề xuất 2 phần mềm, đó là [**Password Safe**](https://github.com/pwsafe/pwsafe) và [**KeePass**](https://keepass.info/download.html), cả 2 đều chỉ *lưu trữ dữ liệu các mật khẩu cục bộ* trên máy tính của bạn. Hơn nữa, đều là mã nguồn mở nên bạn có thể yên tâm. **Tức là sao?** Mã nguồn mở tức là bạn **có quyền kiểm soát và truy cập** vào source code của nó, tự kiểm tra và biên dịch mã nguồn để **tránh backdoor**, thậm chí bạn có thể tự mình kiểm tra xem bảo mật có được triển khai chính xác hay không, nếu muốn, bạn có thể sử dụng **bất kỳ** thuật toán mã hóa nào khác.
+Tớ xin đề xuất 2 phần mềm, đó là [**Password Safe**](https://github.com/pwsafe/pwsafe) và [**KeePass**](https://keepass.info/download.html), cả 2 đều chỉ *lưu trữ dữ liệu các mật khẩu cục bộ* trên máy tính của bạn. Hơn nữa, đều là mã nguồn mở nên bạn có thể yên tâm. **Tức là sao?** Mã nguồn mở tức là bạn có quyền kiểm soát và truy cập vào source code của nó, tự kiểm tra và biên dịch mã nguồn để **tránh backdoor**, thậm chí bạn có thể tự mình kiểm tra xem bảo mật có được triển khai chính xác hay không, nếu muốn, bạn có thể sử dụng bất kỳ thuật toán mã hóa nào khác.
 
 Tuy nhiên, phương pháp này có hai vấn đề cần lưu ý.
 
-**Thứ nhất,** các phần mềm quản lý mật khẩu lại sử dụng một *mật khẩu chính* khác để có thể truy cập vào. Nếu chẳng may máy tính của bạn bị nhiễm một phần mềm độc hại chẳng hạn như **keylogger**, có khả năng rất cao *mật khẩu chính* này sẽ bị đánh cắp. Khi đó, trò chơi bảo mật sẽ kết thúc tại đây. Hacker sẽ có quyền truy cập vào kho lưu trữ và đánh cắp *tất cả các mật khẩu* mà bạn lưu trữ trong này.
+**Thứ nhất,** các phần mềm quản lý mật khẩu lại sử dụng một *mật khẩu chính* khác để có thể truy cập vào. Nếu chẳng may máy tính của bạn bị nhiễm một phần mềm độc hại chẳng hạn như *keylogger*, có khả năng rất cao *mật khẩu chính* này sẽ bị đánh cắp. Khi đó, trò chơi bảo mật sẽ kết thúc tại đây. Hacker sẽ có quyền truy cập vào kho lưu trữ và đánh cắp tất cả các mật khẩu mà bạn lưu trữ trong này.
 
-**Thứ hai,** khá rõ ràng là nếu bạn vô tình *quên* mất mật khẩu chính, bạn sẽ *mất tất cả* các mật khẩu còn lại. Nhưng không sao, vì bạn luôn có thể tạo lại mật khẩu cho từng tài khoản khá dễ dàng. Tuy nhiên, sẽ là một rắc rối lớn nếu bạn có nhiều tài khoản khác nhau. Như tớ đây, tớ có hơn **80 tài khoản** khác nhau trên nhiều nền tảng MXH, forum vân vân, giờ đi reset password tất cả... nghĩ thôi là thấy nản.
+**Thứ hai,** khá rõ ràng là nếu bạn vô tình *quên* mất mật khẩu chính, bạn sẽ mất tất cả các mật khẩu còn lại. Nhưng không sao, vì bạn luôn có thể tạo lại mật khẩu cho từng tài khoản khá dễ dàng. Tuy nhiên, sẽ là một rắc rối lớn nếu bạn có nhiều tài khoản khác nhau. Như tớ đây, tớ có hơn **80 tài khoản** khác nhau trên nhiều nền tảng MXH, forum vân vân, giờ đi reset password tất cả... nghĩ thôi là thấy nản.
 
 <br>
 
 Một nguyên tắc quan trọng khác là **không bao giờ sử dụng cùng một mật khẩu** cho hai tài khoản khác nhau. Điều này nghe có vẻ hơi khó vì ngày nay đa số chúng ta sử dụng mật khẩu cho hầu như tất cả mọi thứ. Do đó, hãy để phần mềm quản lý mật khẩu tạo và lưu giữ các mật khẩu mạnh mẽ và riêng biệt cho bạn.
 
+### Vậy đã an toàn chưa?
+
+Ngay cả khi bạn đã có một mật khẩu mạnh, hacker vẫn có thể sử dụng công nghệ để đánh bại bạn. Có những chương trình đoán mật khẩu ví dụ  như [**John the Ripper**](https://github.com/openwall/john), một chương trình mã nguồn mở miễn phí mà bất kỳ ai cũng có thể sử dụng và hoạt động trong các tham số cấu hình do người dùng thiết lập. *(Nhân tiện,* ***Hashcat*** *phân tán quá trình tấn công qua nhiều GPU và mạnh hơn nhiều so với* ***John the Ripper*** *).*
+
+![](images/password-dai-cuong/john.jpg)
+
+Ví dụ, người dùng có thể chỉ định số lượng kí tự cần thử, có sử dụng các kí tự đặc biệt hay không,... **John the Ripper** và các phần mềm tấn công mật khẩu khác có thể hoán vị các kí tự trong mật khẩu bằng cách sử dụng các bộ quy tắc khác nhau, ví dụ **bộ quy tắc leetspeak** - một hệ thông dùng số để thay thế chữ cái, như `v137 n4m v0 d1ch` thay cho `viet nam vo dich`. 
+
+**Thấy quen hông?** Đúng rồi, teencode ở Việt Nam đấy :))
+
+Cũng vì như vậy nên nếu số lượng kí tự càng nhiều thì để bẻ khóa được bằng kĩ thuật này sẽ càng khó khăn và tốn nhiều thời gian và công sức. Đó là lí do tớ kêu nên đặt một mật khẩu ngẫu nhiên và 25 kí tự trở lên. Khi gặp phải một mật khẩu như vậy, hacker sẽ không có đủ thời gian lẫn nguồn lực để ngồi phá giải.

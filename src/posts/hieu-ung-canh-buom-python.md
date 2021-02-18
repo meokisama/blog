@@ -140,5 +140,5 @@ Quá đỉnh 😄
 
 ## References
 
-- Tham khảo định nghĩa **Wikipedia**
-- Dựa trên bài viết **Chris Greening**
+- Tham khảo định nghĩa [**Wikipedia**](https://vi.wikipedia.org/wiki/Hi%E1%BB%87u_%E1%BB%A9ng_b%C6%B0%C6%A1m_b%C6%B0%E1%BB%9Bm)
+- Dựa trên bài viết [**Chris Greening**](https://dev.to/chrisgreening/visualizing-the-butterfly-effect-with-python-39m3)
