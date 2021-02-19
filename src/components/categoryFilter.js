@@ -44,6 +44,7 @@ const CategoryFilter = ({ categoryList }) => {
 const Nav = styled.nav`
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: var(--color-card);
   margin-bottom: 8rem;
   padding: 12px var(--sizing-md);

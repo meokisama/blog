@@ -107,6 +107,7 @@ const PostCategory = styled(Category)`
 `;
 
 const Info = styled.div`
+  margin-top: 1rem;
   margin-bottom: var(--sizing-md);
 `;
 

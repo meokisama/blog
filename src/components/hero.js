@@ -66,7 +66,6 @@ const StyledContentWrapper = styled(ContentWrapper)`
       border-radius: 15px;
       cursor: pointer;
       &:hover {
-        color: #fff;
         background: #93A0E4;
         transition: all 0.25s ease-out;
       }
