@@ -1,6 +1,7 @@
 import React, { useEffect } from "react"
 import styled from "styled-components"
 import { motion, useAnimation } from "framer-motion"
+import scrollTo from 'gatsby-plugin-smoothscroll';
 
 const StyledSection = styled.section`
   width: 100%;
@@ -56,13 +57,13 @@ const StyledContentWrapper = styled(ContentWrapper)`
       }
     }
     .button{
-      padding: 15px 15px;
+      padding: 9px 13px;
       display: inline-block;
       margin-top: 3rem;
       font-family:'JetBrainsMono';
-      font-weight: 700;
+      font-size: 14px;
       border: 0.125rem solid #93A0E4;
-      border-radius: 20px;
+      border-radius: 15px;
       cursor: pointer;
       &:hover {
         color: #fff;
@@ -91,18 +92,12 @@ const AnimatedUnderlining = motion.custom(Underlining)
 const Hero = () => {
   // Controls to orchestrate animations of greetings, emoji, social profiles, underlining
   const gControls = useAnimation()
-  const eControls = useAnimation()
   const sControls = useAnimation()
   const uControls = useAnimation()
 
   // Start Animations after the splashScreen sequence is done
   useEffect(() => {
     const pageLoadSequence = async () => {
-      if (1) {
-        eControls.start({
-          rotate: [0, -10, 12, -10, 9, 0, 0, 0, 0, 0, 0],
-          transition: { duration: 2.5, loop: 3, repeatDelay: 1 },
-        })
         await gControls.start({
           opacity: 1,
           y: 0,
@@ -116,10 +111,9 @@ const Hero = () => {
         await uControls.start({
           transition: { delay: 0.4, ease: "circOut" },
         })
-      }
     }
     pageLoadSequence()
-  }, [eControls, gControls, sControls, uControls])
+  }, [gControls, sControls, uControls])
 
   return (
     <StyledSection id="hero">
@@ -146,7 +140,19 @@ const Hero = () => {
           <div className="description">
             Tớ chia sẻ kiến thức, kinh nghiệm và "lẽ sống" của tớ ở đây!
           </div>
-          <div className="button">Okayy, check it out</div>
+          <motion.div initial={{ opacity: 0, x: 20 }} animate={sControls}>
+            <div className="button">
+              <a href="https://meokisama.github.io">
+                Back to Portfolio
+              </a>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+            <div className="button">
+              <a onClick={() => scrollTo('#category')}>
+                Scroll down
+              </a>
+            </div>
+          </motion.div>
         </motion.div>
       </StyledContentWrapper>
     </StyledSection>

@@ -101,5 +101,6 @@ module.exports = {
     `gatsby-alias-imports`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-smoothscroll`,
   ],
 };
