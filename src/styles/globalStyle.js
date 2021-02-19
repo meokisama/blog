@@ -86,8 +86,9 @@ const GlobalStyle = createGlobalStyle`
       --color-floating-button-text-hover: #f2f2f2;
       --color-floating-button-shadow: rgba(0, 0, 0, 0.2);
       --color-floating-button-shadow-hover: rgba(0, 0, 0, 0.4);
-      --color-blue: #0066cc;
+      --color-blue: #93A0E4;
       --color-icon: #2c2c2c;
+      --color-hero: #FFF4D9;
     }
 
     body.dark {
@@ -121,8 +122,9 @@ const GlobalStyle = createGlobalStyle`
       --color-floating-button-text-hover: #202020;
       --color-floating-button-shadow: rgba(0, 0, 0, 0.4);
       --color-floating-button-shadow-hover: rgba(0, 0, 0, 0.4);
-      --color-blue: #0a84ff;
+      --color-blue: #93A0E4;
       --color-icon: #d1d1d1;
+      --color-hero: #484743;
 
       /* --font-weight-bold: 600; */
     }

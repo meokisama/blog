@@ -15,12 +15,10 @@ const ContentWrapper = styled.div`
 `
 
 const Underlining = styled.span`
-  box-shadow: inset 0 ${({ big }) => (big ? "-0.75rem" : "-.5rem")} 0
-    ${'#FFF4D9'};
+  box-shadow: inset 0 -0.75rem 0 var(--color-hero);
   transition: box-shadow 0.3s ease-out;
   &:hover {
-    box-shadow: inset 0 ${({ big }) => (big ? "-2rem" : "-1rem")} 0
-      ${'#FFF4D9'};
+    box-shadow: inset 0 -2rem 0 var(--color-hero);
   }
 `
 
@@ -58,16 +56,26 @@ const StyledContentWrapper = styled(ContentWrapper)`
       }
     }
     .button{
-      margin-top: 4rem;
+      padding: 15px 15px;
+      display: inline-block;
+      margin-top: 3rem;
       font-family:'JetBrainsMono';
       font-weight: 700;
+      border: 0.125rem solid #93A0E4;
+      border-radius: 20px;
+      cursor: pointer;
+      &:hover {
+        color: #fff;
+        background: #93A0E4;
+        transition: all 0.25s ease-out;
+      }
     }
     .fix{
       margin-top: 1.75rem;
       // font-size: 35px;
     }
     .subtitle {
-      margin-top: 0.5rem;
+      margin-top: 0.8rem;
     }
     .description {
       font-family: 'JetBrainsMono';
@@ -130,7 +138,7 @@ const Hero = () => {
             </div>
           </h1>
           <h2 className="subtitle">
-            ...và đây là{" "}
+            Và đây là{" "}
             <AnimatedUnderlining animate={uControls} big>
               Blog của tớ
             </AnimatedUnderlining>
@@ -138,7 +146,7 @@ const Hero = () => {
           <div className="description">
             Tớ chia sẻ kiến thức, kinh nghiệm và "lẽ sống" của tớ ở đây!
           </div>
-          <div className="button">Okayy, check it out!</div>
+          <div className="button">Okayy, check it out</div>
         </motion.div>
       </StyledContentWrapper>
     </StyledSection>
