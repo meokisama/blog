@@ -1,7 +1,9 @@
 import React, { useEffect } from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import { motion, useAnimation } from "framer-motion"
-import scrollTo from 'gatsby-plugin-smoothscroll';
+import scrollTo from 'gatsby-plugin-smoothscroll'
+import Img from "gatsby-image"
 
 const StyledSection = styled.section`
   width: 100%;
@@ -48,6 +50,16 @@ const StyledContentWrapper = styled(ContentWrapper)`
       display: flex;
       justify-content: flex-start;
       align-items: center;
+    }
+    .emoji {
+      margin-left: 0.75rem;
+      width: 2.2rem;
+      height: 2.2rem;
+      @media (min-width: 768px) {
+        margin-left: 1rem;
+        width: 3rem;
+        height: 3rem;
+      }
     }
     .title {
       margin-top: 3rem;
@@ -114,6 +126,18 @@ const Hero = () => {
     pageLoadSequence()
   }, [gControls, sControls, uControls])
 
+  const query = useStaticQuery(graphql`
+    query {
+      fileName: file(relativePath: { eq: "images/emoji.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 400, quality: 90) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <StyledSection id="hero">
       <StyledContentWrapper>
@@ -124,7 +148,11 @@ const Hero = () => {
         >
           <h1 className="title">
             <div className="greetings">
-              Hiiii 😙
+              Hiiii
+              <Img
+                className="emoji"
+                fluid={query.fileName.childImageSharp.fluid}
+              />
             </div>
             <div class="fix">
               Lại là tớ đây
@@ -141,7 +169,7 @@ const Hero = () => {
           </div>
           <motion.div initial={{ opacity: 0, x: 20 }} animate={sControls}>
             <div className="button">
-              <a href="https://meokisama.github.io">
+              <a href="https://meoki.net">
                 Back to Portfolio
               </a>
             </div>

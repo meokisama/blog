@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import useSiteMetadata from 'hooks/useSiteMetadata';
-import defaultOpenGraphImage from '../images/og-default.png';
+import defaultOpenGraphImage from '../images/blog.jpg';
 
 const SEO = ({ description = '', meta = [], image = null, title }) => {
   const site = useSiteMetadata();

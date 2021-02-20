@@ -47,7 +47,7 @@ const Nav = styled.nav`
   justify-content: center;
   background-color: var(--color-card);
   margin-bottom: 8rem;
-  padding: 12px var(--sizing-md);
+  padding: 20px var(--sizing-md);
   border-radius: var(--border-radius-base);
   box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.16);
 

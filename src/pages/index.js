@@ -55,7 +55,7 @@ const Home = ({ pageContext, data }) => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Meoki The Blog" />
       <Main>
         <Content>
         <Hero />
