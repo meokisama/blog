@@ -15,50 +15,50 @@ const SEO = ({ description = '', meta = [], image = null, title }) => {
         lang: site.siteMetadata.lang,
       }}
       title={title}
-      titleTemplate={`%s - ${site.siteMetadata.description}`}
+      titleTemplate={`%s | ${site.siteMetadata.author}`}
       meta={[
         {
-          name: 'description',
+          name: `description`,
           content: metaDescription,
         },
         {
-          property: 'og:title',
+          property: `og:title`,
           content: title,
         },
         {
-          property: 'og:description',
+          property: `og:description`,
           content: metaDescription,
         },
         {
-          property: 'og:type',
+          property: `og:type`,
           content: 'website',
         },
         {
-          name: 'twitter:card',
+          name: `twitter:card`,
           content: 'summary',
         },
         {
-          name: 'twitter:creator',
+          name: `twitter:creator`,
           content: site.siteMetadata.author,
         },
         {
-          name: 'twitter:title',
+          name: `twitter:title`,
           content: title,
         },
         {
-          name: 'twitter:description',
+          name: `twitter:description`,
           content: metaDescription,
         },
         {
-          property: 'image',
+          property: `image`,
           content: ogImageUrl,
         },
         {
-          property: 'og:image',
+          property: `og:image`,
           content: ogImageUrl,
         },
         {
-          property: 'twitter:image',
+          property: `twitter:image`,
           content: ogImageUrl,
         },
       ].concat(meta)}
