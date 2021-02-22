@@ -15,7 +15,7 @@ const SEO = ({ description = '', meta = [], image = null, title }) => {
         lang: site.siteMetadata.lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.author}`}
+      titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
