@@ -3,7 +3,7 @@ title: "Name is Bôn, Vát Bôn (Vote Ban)"
 category: "sharing"
 date: "2020-05-27 12:00:00 +09:00"
 desc: "Đừng xem nhẹ cái tên của bất cứ thứ gì. Nó thể hiện sự 'duyên dáng' của bạn đấy."
-thumbnail: "./images/name-is-bon-vat-bon/thumb.jpg"
+thumbnail: "./images/name-is-bon-vat-bon/thumb.png"
 alt: "the importance of name"
 ---
 ### Ý nghĩa một cái tên
