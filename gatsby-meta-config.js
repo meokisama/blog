@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Meoki The Blog', // Your website title
-  description: `Meoki The Blog`, // Your website description
+  description: 'Corner of a devotee of Japanese culture', // Your website description
   author: 'Sáng The Meoki', // Maybe your name
   siteUrl: 'https://meoki.net/blog', // Your website URL
   lang: 'en', // Language
