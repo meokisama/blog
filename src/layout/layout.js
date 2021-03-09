@@ -6,6 +6,7 @@ import useTheme from 'hooks/useTheme';
 import useSiteMetadata from 'hooks/useSiteMetadata';
 import styledTheme from 'styles/theme';
 import GlobalStyle from 'styles/globalStyle';
+import ScrollArrow from 'components/scrollTop';
 
 const Layout = ({ children }) => {
   const [theme, themeToggler] = useTheme();
@@ -23,6 +24,7 @@ const Layout = ({ children }) => {
           <NavBar title={title} themeToggler={themeToggler} />
           {children}
         </Container>
+        <ScrollArrow/>
         <Footer role="contentinfo">
           <Copyright aria-label="Copyright">
             {copyrightStr}
